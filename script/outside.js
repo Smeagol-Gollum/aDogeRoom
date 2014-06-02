@@ -171,7 +171,7 @@ var Outside = {
 	},
 	
 	getMaxPopulation: function() {
-		return $SM.get('game.buildings["hut"]', true) * 4;
+		return $SM.get('game.buildings["hut"]', true) * 2;
 	},
 	
 	increasePopulation: function() {
@@ -182,9 +182,9 @@ var Outside = {
 			if(num == 1) {
 				Notifications.notify(null, _('a stranger arrives in the night'));
 			} else if(num < 5) {
-				Notifications.notify(null, _('a weathered family takes up in one of the huts.'));
+				Notifications.notify(null, _('a weathered family takes up in one of the doghouses.'));
 			} else if(num < 10) {
-				Notifications.notify(null, _('a small group arrives, all dust and bones.'));
+				Notifications.notify(null, _('a small group of shibes arrives, all dust and bones.'));
 			} else if(num < 30) {
 				Notifications.notify(null, _('a convoy lurches in, equal parts worry and hope.'));
 			} else {
@@ -528,15 +528,15 @@ var Outside = {
 		if(numHuts == 0) {
 			title = _("A Silent Forest");
 		} else if(numHuts == 1) {
-			title = _("A Lonely Hut");
+			title = _("A Lonely Doghouse");
 		} else if(numHuts <= 4) {
-			title = _("A Tiny Village");
+			title = _("A Tiny Shibe-Village");
 		} else if(numHuts <= 8) {
-			title = _("A Modest Village");
+			title = _("A Modest Village of Doges");
 		} else if(numHuts <= 14) {
-			title = _("A Large Village");
+			title = _("A Large Shiba Village");
 		} else {
-			title = _("A Raucous Village");
+			title = _("A Tail-Wagging Village");
 		}
 		
 		if(Engine.activeModule == this) {
