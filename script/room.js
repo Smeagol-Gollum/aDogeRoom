@@ -18,7 +18,7 @@ var Room = {
 			name: _('trap'),
 			button: null,
 			maximum: 10,
-			availableMsg: _('builder says she can make traps to catch any creatures might still be alive out there'),
+			availableMsg: _('build-doge says she can make traps to catch any creatures might still be alive out there'),
 			buildMsg: _('more traps to catch more creatures'),
 			maxMsg: _("more traps won't help now"),
 			type: 'building',
@@ -33,7 +33,7 @@ var Room = {
 			name: _('cart'),
 			button: null,
 			maximum: 1,
-			availableMsg: _('builder says she can make a cart for carrying wood'),
+			availableMsg: _('builder-doge says she can make a cart for carrying wood'),
 			buildMsg: _('the rickety cart will carry more wood from the forest'),
 			type: 'building',
 			cost: function() {
@@ -46,8 +46,8 @@ var Room = {
 			name: _('hut'),
 			button: null,
 			maximum: 20,
-			availableMsg: _("builder says there are more wanderers. says they'll work, too."),
-			buildMsg: _('builder puts up a hut, out in the forest. says word will get around.'),
+			availableMsg: _("builder-doge says there are more shibas. says they'll work, too."),
+			buildMsg: _('shibe builder puts up a hut, out in the forest. says word will get around.'),
 			maxMsg: _('no more room for huts.'),
 			type: 'building',
 			cost: function() {
@@ -61,7 +61,7 @@ var Room = {
 			name: _('lodge'),
 			button: null,
 			maximum: 1,
-			availableMsg: _('villagers could help hunt, given the means'),
+			availableMsg: _('shibas could help hunt, given the means'),
 			buildMsg: _('the hunting lodge stands in the forest, a ways out of town'),
 			type: 'building',
 			cost: function() {
@@ -77,7 +77,7 @@ var Room = {
 			button: null,
 			maximum: 1,
 			availableMsg: _("a trading post would make commerce easier"),
-			buildMsg: _("now the nomads have a place to set up shop, they might stick around a while"),
+			buildMsg: _("now the nomadoges have a place to set up shop, they might stick around a while"),
 			type: 'building',
 			cost: function() {
 				return {
@@ -90,7 +90,7 @@ var Room = {
 			name: _('tannery'),
 			button: null,
 			maximum: 1,
-			availableMsg: _("builder says leather could be useful. says the villagers could make it."),
+			availableMsg: _("builder-doge says leather could be useful. says the villagers could make it."),
 			buildMsg: _('tannery goes up quick, on the edge of the village'),
 			type: 'building',
 			cost: function() {
@@ -104,8 +104,8 @@ var Room = {
 			name: _('smokehouse'),
 			button: null,
 			maximum: 1,
-			availableMsg: _("should cure the meat, or it'll spoil. builder says she can fix something up."),
-			buildMsg: _('builder finishes the smokehouse. she looks hungry.'),
+			availableMsg: _("should cure the meat, or it'll spoil. builder-doge says she can fix something up."),
+			buildMsg: _('builder-doge finishes the smokehouse. she looks hungry.'),
 			type: 'building',
 			cost: function() {
 				return {
@@ -118,8 +118,8 @@ var Room = {
 			name: _('workshop'),
 			button: null,
 			maximum: 1,
-			availableMsg: _("builder says she could make finer things, if she had the tools"),
-			buildMsg: _("workshop's finally ready. builder's excited to get to it"),
+			availableMsg: _("builder-doge says she could make finer things, if she had the tools"),
+			buildMsg: _("workshop's finally ready. builder-doge is excited to get to it"),
 			type: 'building',
 			cost: function() {
 				return {
@@ -133,7 +133,7 @@ var Room = {
 			name: _('steelworks'),
 			button: null,
 			maximum: 1,
-			availableMsg: _("builder says the villagers could make steel, given the tools"),
+			availableMsg: _("builder-doge says the villagers could make steel, given the tools"),
 			buildMsg: _("a haze falls over the village as the steelworks fires up"),
 			type: 'building',
 			cost: function() {
@@ -148,7 +148,7 @@ var Room = {
 			name: _('armoury'),
 			button: null,
 			maximum: 1,
-			availableMsg: _("builder says it'd be useful to have a steady source of bullets"),
+			availableMsg: _("builder-doge says it'd be useful to have a steady source of bullets"),
 			buildMsg: _("armoury's done, welcoming back the weapons of the past."),
 			type: 'building',
 			cost: function() {
@@ -481,7 +481,7 @@ var Room = {
 		
 		
 		// Create the room tab
-		this.tab = Header.addLocation(_("A Dark Room"), "room", Room);
+		this.tab = Header.addLocation(_("A Doge Room"), "room", Room);
 		
 		// Create the Room panel
 		this.panel = $('<div>')
@@ -494,7 +494,7 @@ var Room = {
 		// Create the light button
 		new Button.Button({
 			id: 'lightButton',
-			text: _('light fire'),
+			text: _('let there be light (fire)'),
 			click: Room.lightFire,
 			cooldown: Room._STOKE_COOLDOWN,
 			width: '80px',
@@ -561,7 +561,7 @@ var Room = {
 				stores: {'wood' : 2 }
 			});
 			Room.updateIncomeView();
-			Notifications.notify(Room, _("the stranger is standing by the fire. she says she can help. says she builds things."));
+			Notifications.notify(Room, _("the stranger is standing by the fire. she says she can help. she was a builder-doge before."));
 		}
 
 		Engine.moveStoresView(null, transition_diff);
@@ -600,7 +600,7 @@ var Room = {
 	},
 	
 	setTitle: function() {
-		var title = Room.fire.value < 2 ? _("A Dark Room") : _("A Firelit Room");
+		var title = Room.fire.value < 2 ? _("A Doge Room") : _("A Firelit Room");
 		if(Engine.activeModule == this) {
 			document.title = title;
 		}
@@ -684,7 +684,7 @@ var Room = {
 		var wood = $SM.get('stores.wood');
 		if(Room.fire.value <= Room.FireEnum.Flickering.value &&
 			$SM.get('game.builder.level') > 3 && wood > 0) {
-			Notifications.notify(Room, _("builder stokes the fire"), true);
+			Notifications.notify(Room, _("builder-doge stokes the fire"), true);
 			$SM.set('stores.wood', wood - 1);
 			Room.fire = Room.FireEnum.fromInt(Room.fire.value + 1);
 		}
@@ -714,7 +714,7 @@ var Room = {
 	unlockForest: function() {
 		$SM.set('stores.wood', 4);
 		Outside.init();
-		Notifications.notify(Room, _("the wind howls outside"));
+		Notifications.notify(Room, _("the wind howls outside, as if calling you"));
 		Notifications.notify(Room, _("the wood is running out"));
 		Engine.event('progress', 'outside');
 	},
@@ -722,7 +722,7 @@ var Room = {
 	updateBuilderState: function() {
 		var lBuilder = $SM.get('game.builder.level');
 		if(lBuilder == 0) {
-			Notifications.notify(Room, _("a ragged stranger stumbles through the door and collapses in the corner"));
+			Notifications.notify(Room, _("a ragged shiba stumbles through the door and collapses in the corner"));
 			lBuilder = $SM.setget('game.builder.level', 1);
 			setTimeout(Room.unlockForest, Room._NEED_WOOD_DELAY);
 		} 
@@ -730,10 +730,10 @@ var Room = {
 			var msg = "";
 			switch(lBuilder) {
 			case 1:
-				msg = _("the stranger shivers, and mumbles quietly. her words are unintelligible.");
+				msg = _("the shibe stranger shivers, and mumbles quietly. her words are unintelligible.");
 				break;
 			case 2:
-				msg = _("the stranger in the corner stops shivering. her breathing calms.");
+				msg = _("the stranger in the corner stops shivering. her panting eases and her tail begins to thump upon the floor");
 				break;
 			}
 			Notifications.notify(Room, msg);
