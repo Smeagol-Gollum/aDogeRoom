@@ -1,5 +1,7 @@
 body {
     background-color: #272823;
+    -webkit-animation: background-gradient-change linear 3s infinite alternate;
+    -moz-animation: background-gradient-change linear 3s infinite alternate;
     color: #EEE;
 }
 
