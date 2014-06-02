@@ -164,10 +164,10 @@ div#notifyGradient {
 	width: 100%;
 	background-color: white;
 	background: -webkit-linear-gradient(
-		rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%
+		rgba(196, 255, 0, 0) 0%, rgba(196, 255, 0, 1) 100%
 	);
 	background: linear-gradient(
-		rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%
+		rgba(196, 255, 0, 0) 0%, rgba(196, 255, 0, 1) 100%
 	);
 	filter: alpha(
 		Opacity=0, FinishOpacity=100, Style=1, StartX=0, StartY=0, FinishX=0, FinishY=500
