@@ -7,7 +7,7 @@
 		 * 	  value-change events. These events should be fired whenever a value (or group of values, I suppose) is updated.
 		 * 	  That would be so elegant and awesome.
 		 */
-		SITE_URL: encodeURIComponent("http://adarkroom.doublespeakgames.com"),
+		SITE_URL: encodeURIComponent("http://smeagol-gollum.github.io/aDogeRoom/"),
 		VERSION: 1.3,
 		MAX_STORE: 99999999999999,
 		SAVE_DISPLAY: 30 * 1000,
@@ -18,17 +18,17 @@
 			
 		Perks: {
 			'boxer': {
-				name: _('boxer'),
+				name: _('shibe level 1'),
 				desc: _('punches do more damage'),
 				notify: _('learned to throw punches with purpose')
 			},
 			'martial artist': {
-				name: _('martial artist'),
+				name: _('shibe level 2'),
 				desc: _('punches do even more damage.'),
 				notify: _('learned to fight quite effectively without weapons')
 			},
 			'unarmed master': {
-				name: _('unarmed master'),
+				name: _('shibe final form'),
 				desc: _('punch twice as fast, and with even more force'),
 				notify: _('learned to strike faster without weapons')
 			},
