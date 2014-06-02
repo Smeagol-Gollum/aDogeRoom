@@ -321,8 +321,8 @@ div.tooltip {
 	padding: 2px 5px;
 	border: 1px solid black;
 	position: absolute;
-	box-shadow: -1px 3px 2px #666;
-	background: white;
+	box-shadow: -1px 3px 2px blue;
+	background: orange;
 	z-index: 999;
 }
 
@@ -376,7 +376,7 @@ body.noMask .eventPanel {
 }
 
 .eventPanel:before {
-    background-color:white;
+    background-color:yellow;
     opacity: 0.6;
     content: " ";
     height: 700px;
@@ -429,7 +429,7 @@ body.noMask .eventTitle {
 }
 
 .eventTitle:after {
-    background-color: white;
+    background-color: yellow;
     bottom: 32%;
     content: " ";
     height: 5px;
