@@ -15,12 +15,12 @@ var Room = {
 	
 	Craftables: {
 		'trap': {
-			name: _('trap'),
+			name: _('lost-and-found area'),
 			button: null,
 			maximum: 10,
-			availableMsg: _('build-doge says she can make traps to catch any creatures might still be alive out there'),
-			buildMsg: _('more traps to catch more creatures'),
-			maxMsg: _("more traps won't help now"),
+			availableMsg: _('build-doge says she can set up "lost-and-found" stations to get things that people lose, for free!'),
+			buildMsg: _('more lost-and-founds to get more valuables!'),
+			maxMsg: _("more lost-and-founds won't help now"),
 			type: 'building',
 			cost: function() {
 				var n = $SM.get('game.buildings["trap"]', true);
