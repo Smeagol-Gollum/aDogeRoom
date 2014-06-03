@@ -576,11 +576,11 @@ var Room = {
 			}
 			return null;
 		},
-		Freezing: { value: 0, text: _('freezing') },
-		Cold: { value: 1, text: _('cold') },
-		Mild: { value: 2, text: _('mild') },
-		Warm: { value: 3, text: _('warm') },
-		Hot: { value: 4, text: _('hot') }
+		Freezing: { value: 0, text: _('pitch-black') },
+		Cold: { value: 1, text: _('dark') },
+		Mild: { value: 2, text: _('lit by the glow of the screen') },
+		Warm: { value: 3, text: _('lit by the glow of the screen') },
+		Hot: { value: 4, text: _('lit by the glow of the screen') }
 	},
 	
 	FireEnum: {
@@ -638,7 +638,7 @@ var Room = {
 	lightFire: function() {
 		var wood = $SM.get('stores.wood');
 		if(wood < 5) {
-			Notifications.notify(Room, _("not enough wood to get the fire going"));
+			Notifications.notify(Room, _("not enough electricity to charge the laptop"));
 			Button.clearCooldown($('#lightButton.button'));
 			return;
 		} else if(wood > 4) {
@@ -651,7 +651,7 @@ var Room = {
 	stokeFire: function() {
 		var wood = $SM.get('stores.wood');
 		if(wood === 0) {
-			Notifications.notify(Room, _("the wood has run out"));
+			Notifications.notify(Room, _("the battery packs have been drained of electricity"));
 			Button.clearCooldown($('#stokeButton.button'));
 			return;
 		}
@@ -668,10 +668,10 @@ var Room = {
 		if(Engine.activeModule != Room) {
 			Room.changed = true;
 		}
-		Notifications.notify(Room, _("the fire is {0}", Room.fire.text), true);
+		Notifications.notify(Room, _("the laptop is {0}", Room.fire.text), true);
 		if(Room.fire.value > 1 && $SM.get('game.builder.level') < 0) {
 			$SM.set('game.builder.level', 0);
-			Notifications.notify(Room, _("the light from the fire spills from the windows, out into the dark"));
+			Notifications.notify(Room, _("the light from the laptop's screen spills from the windows, out into the dark"));
 			setTimeout(Room.updateBuilderState, Room._BUILDER_STATE_DELAY);
 		}	
 		window.clearTimeout(Room._fireTimer);
@@ -684,7 +684,7 @@ var Room = {
 		var wood = $SM.get('stores.wood');
 		if(Room.fire.value <= Room.FireEnum.Flickering.value &&
 			$SM.get('game.builder.level') > 3 && wood > 0) {
-			Notifications.notify(Room, _("builder-doge stokes the fire"), true);
+			Notifications.notify(Room, _("builder-doge charges the laptop"), true);
 			$SM.set('stores.wood', wood - 1);
 			Room.fire = Room.FireEnum.fromInt(Room.fire.value + 1);
 		}
