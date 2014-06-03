@@ -7,7 +7,7 @@ var Room = {
 	_ROOM_WARM_DELAY: 30 * 1000, // time between room temperature updates
 	_BUILDER_STATE_DELAY: 0.5 * 60 * 1000, // time between builder state updates
 	_STOKE_COOLDOWN: 10, // cooldown to stoke the fire
-	_NEED_WOOD_DELAY: 15 * 1000, // from when the stranger shows up, to when you need wood
+	_NEED_ELECTRICITY_DELAY: 15 * 1000, // from when the stranger shows up, to when you need electricity
 	
 	fire:null,
 	temperature:null,
@@ -25,7 +25,7 @@ var Room = {
 			cost: function() {
 				var n = $SM.get('game.buildings["trap"]', true);
 				return {
-					'wood': 10 + (n*10)
+					'electricity': 10 + (n*10)
 				};
 			}
 		},
@@ -38,7 +38,7 @@ var Room = {
 			type: 'building',
 			cost: function() {
 				return {
-					'wood': 30
+					'electricity': 30
 				};
 			}
 		},
@@ -53,7 +53,7 @@ var Room = {
 			cost: function() {
 				var n = $SM.get('game.buildings["hut"]', true);
 				return {
-					'wood': 100 + (n*50)
+					'electricity': 100 + (n*50)
 				};
 			}
 		},
@@ -66,7 +66,7 @@ var Room = {
 			type: 'building',
 			cost: function() {
 				return {
-					wood: 200,
+					electricity: 200,
 					fur: 10,
 					meat: 5
 				};
@@ -81,7 +81,7 @@ var Room = {
 			type: 'building',
 			cost: function() {
 				return {
-					'wood': 400,
+					'electricity': 400,
 					'fur': 100
 				};
 			}
@@ -95,7 +95,7 @@ var Room = {
 			type: 'building',
 			cost: function() {
 				return {
-					'wood': 500,
+					'electricity': 500,
 					'fur': 50
 				};
 			}
@@ -109,7 +109,7 @@ var Room = {
 			type: 'building',
 			cost: function() {
 				return {
-					'wood': 600,
+					'electricity': 600,
 					'meat': 50
 				};
 			}
@@ -123,7 +123,7 @@ var Room = {
 			type: 'building',
 			cost: function() {
 				return {
-					'wood': 800,
+					'electricity': 800,
 					'leather': 100,
 					'scales': 10
 				};
@@ -138,7 +138,7 @@ var Room = {
 			type: 'building',
 			cost: function() {
 				return {
-					'wood': 1500,
+					'electricity': 1500,
 					'iron': 100,
 					'coal': 100
 				};
@@ -153,7 +153,7 @@ var Room = {
 			type: 'building',
 			cost: function() {
 				return {
-					'wood': 3000,
+					'electricity': 3000,
 					'steel': 100,
 					'sulphur': 50
 				};
@@ -166,7 +166,7 @@ var Room = {
 			buildMsg: _('a torch to keep the dark away'),
 			cost: function() {
 				return {
-					'wood': 1,
+					'electricity': 1,
 					'cloth': 1
 				};
 			}
@@ -216,7 +216,7 @@ var Room = {
 			buildMsg: _("this spear's not elegant, but it's pretty good at stabbing"),
 			cost: function() {
 				return {
-					'wood': 100,
+					'electricity': 100,
 					'teeth': 5
 				};
 			}
@@ -241,7 +241,7 @@ var Room = {
 			buildMsg: _('the wagon can carry a lot of supplies'),
 			cost: function() {
 				return {
-					'wood': 500,
+					'electricity': 500,
 					'iron': 100
 				};
 			}
@@ -254,7 +254,7 @@ var Room = {
 			buildMsg: _('the convoy can haul mostly everything'),
 			cost: function() {
 				return {
-					'wood': 1000,
+					'electricity': 1000,
 					'iron': 200,
 					'steel': 100
 				};
@@ -303,7 +303,7 @@ var Room = {
 			buildMsg: _("sword is sharp. good protection out in the wilds."),
 			cost: function() {
 				return {
-					'wood': 200,
+					'electricity': 200,
 					'leather': 50,
 					'iron': 20
 				};
@@ -316,7 +316,7 @@ var Room = {
 			buildMsg: _("the steel is strong, and the blade true."),
 			cost: function() {
 				return {
-					'wood': 500,
+					'electricity': 500,
 					'leather': 100,
 					'steel': 20
 				};
@@ -328,7 +328,7 @@ var Room = {
 			buildMsg: _("black powder and bullets, like the old days."),
 			cost: function() {
 				return {
-					'wood': 200,
+					'electricity': 200,
 					'steel': 50,
 					'sulphur': 50
 				};
@@ -468,7 +468,7 @@ var Room = {
 			this._ROOM_WARM_DELAY = 5000;
 			this._BUILDER_STATE_DELAY = 5000;
 			this._STOKE_COOLDOWN = 0;
-			this._NEED_WOOD_DELAY = 5000;
+			this._NEED_ELECTRICITY_DELAY = 5000;
 		}
 		
 		if(typeof $SM.get('features.location.room') == 'undefined') {
@@ -498,7 +498,7 @@ var Room = {
 			click: Room.lightFire,
 			cooldown: Room._STOKE_COOLDOWN,
 			width: '80px',
-			cost: {'wood': 5}
+			cost: {'electricity': 5}
 		}).appendTo('div#roomPanel');
 		
 		// Create the stoke button
@@ -508,7 +508,7 @@ var Room = {
 			click: Room.stokeFire,
 			cooldown: Room._STOKE_COOLDOWN,
 			width: '80px',
-			cost: {'wood': 1}
+			cost: {'electricity': 1}
 		}).appendTo('div#roomPanel');
 		
 		// Create the stores container
@@ -536,8 +536,8 @@ var Room = {
 		if($SM.get('game.builder.level') >= 0 && $SM.get('game.builder.level') < 3) {
 			Room._builderTimer = setTimeout(Room.updateBuilderState, Room._BUILDER_STATE_DELAY);
 		}
-		if($SM.get('game.builder.level') == 1 && $SM.get('stores.wood', true) < 0) {
-			setTimeout(Room.unlockForest, Room._NEED_WOOD_DELAY);
+		if($SM.get('game.builder.level') == 1 && $SM.get('stores.electricity', true) < 0) {
+			setTimeout(Room.unlockForest, Room._NEED_ELECTRICITY_DELAY);
 		}
 		setTimeout($SM.collectIncome, 1000);
 
@@ -624,7 +624,7 @@ var Room = {
 			}
 		}
 		
-		if(!$SM.get('stores.wood')) {
+		if(!$SM.get('stores.electricity')) {
 			light.addClass('free');
 			stoke.addClass('free');
 		} else {
@@ -636,27 +636,27 @@ var Room = {
 	_fireTimer: null,
 	_tempTimer: null,
 	lightFire: function() {
-		var wood = $SM.get('stores.wood');
-		if(wood < 5) {
+		var electricity = $SM.get('stores.electricity');
+		if(electricity < 5) {
 			Notifications.notify(Room, _("not enough electricity to charge the laptop"));
 			Button.clearCooldown($('#lightButton.button'));
 			return;
-		} else if(wood > 4) {
-			$SM.set('stores.wood', wood - 5);
+		} else if(electricity > 4) {
+			$SM.set('stores.electricity', electricity - 5);
 		}
 		Room.fire = Room.FireEnum.Burning;
 		Room.onFireChange();
 	},
 	
 	stokeFire: function() {
-		var wood = $SM.get('stores.wood');
-		if(wood === 0) {
+		var electricity = $SM.get('stores.electricity');
+		if(electricity === 0) {
 			Notifications.notify(Room, _("the battery packs have been drained of electricity"));
 			Button.clearCooldown($('#stokeButton.button'));
 			return;
 		}
-		if(wood > 0) {
-			$SM.set('stores.wood', wood - 1);
+		if(electricity > 0) {
+			$SM.set('stores.electricity', electricity - 1);
 		}
 		if(Room.fire.value < 4) {
 			Room.fire = Room.FireEnum.fromInt(Room.fire.value + 1);
@@ -681,11 +681,11 @@ var Room = {
 	},
 	
 	coolFire: function() {
-		var wood = $SM.get('stores.wood');
+		var electricity = $SM.get('stores.electricity');
 		if(Room.fire.value <= Room.FireEnum.Flickering.value &&
-			$SM.get('game.builder.level') > 3 && wood > 0) {
+			$SM.get('game.builder.level') > 3 && electricity > 0) {
 			Notifications.notify(Room, _("builder-doge charges the laptop"), true);
-			$SM.set('stores.wood', wood - 1);
+			$SM.set('stores.electricity', electricity - 1);
 			Room.fire = Room.FireEnum.fromInt(Room.fire.value + 1);
 		}
 		if(Room.fire.value > 0) {
@@ -712,10 +712,10 @@ var Room = {
 	},
 	
 	unlockForest: function() {
-		$SM.set('stores.wood', 4);
+		$SM.set('stores.electricity', 4);
 		Outside.init();
 		Notifications.notify(Room, _("the wind howls outside, as if calling you"));
-		Notifications.notify(Room, _("the wood is running out"));
+		Notifications.notify(Room, _("the electricity is running out"));
 		Engine.event('progress', 'outside');
 	},
 	
@@ -724,7 +724,7 @@ var Room = {
 		if(lBuilder == 0) {
 			Notifications.notify(Room, _("a ragged shiba stumbles through the door and collapses in the corner"));
 			lBuilder = $SM.setget('game.builder.level', 1);
-			setTimeout(Room.unlockForest, Room._NEED_WOOD_DELAY);
+			setTimeout(Room.unlockForest, Room._NEED_ELECTRICITY_DELAY);
 		} 
 		else if(lBuilder < 3 && Room.temperature.value >= Room.TempEnum.Warm.value) {
 			var msg = "";
@@ -976,8 +976,8 @@ var Room = {
 			Room.buttons[thing] = true;
 			return true;
 		}
-		// Show buttons if we have at least 1/2 the wood, and all other components have been seen.
-		if($SM.get('stores.wood', true) < cost['wood'] * 0.5) {
+		// Show buttons if we have at least 1/2 the electricity, and all other components have been seen.
+		if($SM.get('stores.electricity', true) < cost['electricity'] * 0.5) {
 			return false;
 		}
 		for(var c in cost) {

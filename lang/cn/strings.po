@@ -38,11 +38,11 @@ msgid "cart"
 msgstr "小推车"
 
 #: ../../script/room.js:36
-msgid "builder says she can make a cart for carrying wood"
+msgid "builder says she can make a cart for carrying electricity"
 msgstr "工人说她能制作运输木头的小推车"
 
 #: ../../script/room.js:37
-msgid "the rickety cart will carry more wood from the forest"
+msgid "the rickety cart will carry more electricity from the forest"
 msgstr "小推车能从森林里运来更多的木头"
 
 #: ../../script/room.js:46
@@ -335,11 +335,11 @@ msgid "A Firelit Room"
 msgstr "温暖的木屋"
 
 #: ../../script/room.js:641
-msgid "not enough wood to get the fire going"
+msgid "not enough electricity to get the fire going"
 msgstr "木头不足, 无法生火"
 
 #: ../../script/room.js:654
-msgid "the wood has run out"
+msgid "the electricity has run out"
 msgstr "木头用光了"
 
 #: ../../script/room.js:674
@@ -355,7 +355,7 @@ msgid "the wind howls outside"
 msgstr "屋外寒风呼啸"
 
 #: ../../script/room.js:718
-msgid "the wood is running out"
+msgid "the electricity is running out"
 msgstr "木头就快烧完了"
 
 #: ../../script/room.js:725
@@ -667,7 +667,7 @@ msgid "saved."
 msgstr "数据已经保存"
 
 #: ../../script/localization.js:3
-msgid "wood"
+msgid "electricity"
 msgstr "木头"
 
 #: ../../script/localization.js:3
@@ -807,7 +807,7 @@ msgid "not enough fur"
 msgstr "皮毛不够了"
 
 #: ../../script/localization.js:9
-msgid "not enough wood"
+msgid "not enough electricity"
 msgstr "木头不够了"
 
 #: ../../script/localization.js:9
@@ -1219,7 +1219,7 @@ msgid "A Silent Forest"
 msgstr "寂静的村庄"
 
 #: ../../script/outside.js:166
-msgid "gather wood"
+msgid "gather electricity"
 msgstr "收集木头"
 
 #: ../../script/outside.js:183
@@ -1430,7 +1430,7 @@ msgstr "有东西在储藏室"
 
 #: ../../script/events/room.js:126 ../../script/events/room.js:146
 #: ../../script/events/room.js:166
-msgid "some wood is missing."
+msgid "some electricity is missing."
 msgstr "一些木头不见了."
 
 #: ../../script/events/room.js:127
@@ -1498,7 +1498,7 @@ msgstr "神秘流浪者"
 
 #: ../../script/events/room.js:265
 msgid ""
-"a wanderer arrives with an empty cart. says if he leaves with wood, he'll be "
+"a wanderer arrives with an empty cart. says if he leaves with electricity, he'll be "
 "back with more."
 msgstr "一个流浪汉带着一个空筐子来到了木屋, 说如果能给她一些木头带走, 他之后会带来更多."
 
@@ -1515,11 +1515,11 @@ msgid "give 500"
 msgstr "给 500"
 
 #: ../../script/events/room.js:288 ../../script/events/room.js:307
-msgid "the wanderer leaves, cart loaded with wood"
+msgid "the wanderer leaves, cart loaded with electricity"
 msgstr "流浪汉带着木头离开了"
 
 #: ../../script/events/room.js:294 ../../script/events/room.js:313
-msgid "the mysterious wanderer returns, cart piled high with wood."
+msgid "the mysterious wanderer returns, cart piled high with electricity."
 msgstr "流浪汉回来了, 带回来了一堆木头."
 
 #: ../../script/events/room.js:335

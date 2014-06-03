@@ -48,10 +48,10 @@ Events.Room = [
 				}
 			}
 		}
-	}, { /* Noises Outside  --  gain wood/fur */
+	}, { /* Noises Outside  --  gain electricity/fur */
 		title: _('Noises'),
 		isAvailable: function() {
-			return Engine.activeModule == Room && $SM.get('stores.wood');
+			return Engine.activeModule == Room && $SM.get('stores.electricity');
 		},
 		scenes: {
 			'start': {
@@ -84,7 +84,7 @@ Events.Room = [
 				}
 			},
 			'stuff': {
-				reward: { wood: 100, fur: 10 },
+				reward: { electricity: 100, fur: 10 },
 				text: [
 					_('a bundle of sticks lies just beyond the threshold, wrapped in coarse furs.'),
 					_('the night is silent.')
@@ -98,10 +98,10 @@ Events.Room = [
 			}
 		}
 	},
-	{ /* Noises Inside  --  trade wood for better good */
+	{ /* Noises Inside  --  trade electricity for better good */
 		title: _('Noises'),
 		isAvailable: function() {
-			return Engine.activeModule == Room && $SM.get('stores.wood');
+			return Engine.activeModule == Room && $SM.get('stores.electricity');
 		},
 		scenes: {
 			start: {
@@ -123,16 +123,16 @@ Events.Room = [
 			},
 			scales: {
 				text: [
-			       _('some wood is missing.'),
+			       _('some electricity is missing.'),
 			       _('the ground is littered with small scales')
 			    ],
 			    onLoad: function() {
-			    	var numWood = $SM.get('stores.wood', true);
+			    	var numWood = $SM.get('stores.electricity', true);
 			    	numWood = Math.floor(numWood * 0.1);
 			    	if(numWood == 0) numWood = 1;
 			    	var numScales = Math.floor(numWood / 5);
 			    	if(numScales == 0) numScales = 1;
-			    	$SM.addM('stores', {'wood': -numWood, 'scales': numScales});
+			    	$SM.addM('stores', {'electricity': -numWood, 'scales': numScales});
 			    },
 			    buttons: {
 			    	'leave': {
@@ -143,16 +143,16 @@ Events.Room = [
 			},
 			teeth: {
 				text: [
-			       _('some wood is missing.'),
+			       _('some electricity is missing.'),
 			       _('the ground is littered with small teeth')
 			    ],
 			    onLoad: function() {
-			    	var numWood = $SM.get('stores.wood', true);
+			    	var numWood = $SM.get('stores.electricity', true);
 			    	numWood = Math.floor(numWood * 0.1);
 			    	if(numWood == 0) numWood = 1;
 			    	var numTeeth = Math.floor(numWood / 5);
 			    	if(numTeeth == 0) numTeeth = 1;
-			    	$SM.addM('stores', {'wood': -numWood, 'teeth': numTeeth});
+			    	$SM.addM('stores', {'electricity': -numWood, 'teeth': numTeeth});
 			    },
 			    buttons: {
 			    	'leave': {
@@ -163,16 +163,16 @@ Events.Room = [
 			},
 			cloth: {
 				text: [
-			       _('some wood is missing.'),
+			       _('some electricity is missing.'),
 			       _('the ground is littered with scraps of cloth')
 			    ],
 			    onLoad: function() {
-			    	var numWood = $SM.get('stores.wood', true);
+			    	var numWood = $SM.get('stores.electricity', true);
 			    	numWood = Math.floor(numWood * 0.1);
 			    	if(numWood == 0) numWood = 1;
 			    	var numCloth = Math.floor(numWood / 5);
 			    	if(numCloth == 0) numCloth = 1;
-			    	$SM.addM('stores', {'wood': -numWood, 'cloth': numCloth});
+			    	$SM.addM('stores', {'electricity': -numWood, 'cloth': numCloth});
 			    },
 			    buttons: {
 			    	'leave': {
@@ -254,28 +254,28 @@ Events.Room = [
 		}
 	},
 	
-	{ /* Mysterious Wanderer  --  wood gambling */
+	{ /* Mysterious Wanderer  --  electricity gambling */
 		title: _('The Mysterious Wanderer'),
 		isAvailable: function() {
-			return Engine.activeModule == Room && $SM.get('stores.wood');
+			return Engine.activeModule == Room && $SM.get('stores.electricity');
 		},
 		scenes: {
 			start: {
 				text: [
-			       _('a wanderer arrives with an empty cart. says if he leaves with wood, he\'ll be back with more.'),
+			       _('a wanderer arrives with an empty cart. says if he leaves with electricity, he\'ll be back with more.'),
 			       _("builder's not sure he's to be trusted.")
 				],
 				notification: _('a mysterious wanderer arrives'),
 				buttons: {
-					'100wood': {
+					'100electricity': {
 						text: _('give 100'),
-						cost: {wood: 100},
-						nextScene: { 1: '100wood'}
+						cost: {electricity: 100},
+						nextScene: { 1: '100electricity'}
 					},
-					'500wood': {
+					'500electricity': {
 						text: _('give 500'),
-						cost: {wood: 500},
-						nextScene: { 1: '500wood' }
+						cost: {electricity: 500},
+						nextScene: { 1: '500electricity' }
 					},
 					'deny': {
 						text: _('turn him away'),
@@ -283,15 +283,15 @@ Events.Room = [
 					}
 				}
 			},
-			'100wood': {
+			'100electricity': {
 				text: [
-			       _('the wanderer leaves, cart loaded with wood')
+			       _('the wanderer leaves, cart loaded with electricity')
 			    ],
 			    onLoad: function() {
 			    	if(Math.random() < 0.5) {
 			    		setTimeout(function() {
-			    			$SM.add('stores.wood', 300);
-			    			Notifications.notify(Room, _('the mysterious wanderer returns, cart piled high with wood.'));
+			    			$SM.add('stores.electricity', 300);
+			    			Notifications.notify(Room, _('the mysterious wanderer returns, cart piled high with electricity.'));
 			    		}, 60 * 1000);
 			    	}
 			    },
@@ -302,15 +302,15 @@ Events.Room = [
 			    	}
 			    }
 			},
-			'500wood': {
+			'500electricity': {
 				text: [
-				       _('the wanderer leaves, cart loaded with wood')
+				       _('the wanderer leaves, cart loaded with electricity')
 			    ],
 			    onLoad: function() {
 			    	if(Math.random() < 0.3) {
 			    		setTimeout(function() {
-			    			$SM.add('stores.wood', 1500);
-			    			Notifications.notify(Room, _('the mysterious wanderer returns, cart piled high with wood.'));
+			    			$SM.add('stores.electricity', 1500);
+			    			Notifications.notify(Room, _('the mysterious wanderer returns, cart piled high with electricity.'));
 			    		}, 60 * 1000);
 			    	}
 			    },

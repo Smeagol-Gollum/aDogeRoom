@@ -13,7 +13,7 @@ var Outside = {
 			name: _('gatherer'),
 			delay: 10,
 			stores: {
-				'wood': 1
+				'electricity': 1
 			}
 		},
 		'hunter': {
@@ -45,7 +45,7 @@ var Outside = {
 			delay: 10,
 			stores: {
 				'meat': -5,
-				'wood': -5,
+				'electricity': -5,
 				'cured meat': 1
 			}
 		},
@@ -560,7 +560,7 @@ var Outside = {
 	gatherWood: function() {
 		Notifications.notify(Outside, _("dry brush and dead branches litter the forest floor"));
 		var gatherAmt = $SM.get('game.buildings["cart"]', true) > 0 ? 50 : 10;
-		$SM.add('stores.wood', gatherAmt);
+		$SM.add('stores.electricity', gatherAmt);
 	},
 	
 	checkTraps: function() {

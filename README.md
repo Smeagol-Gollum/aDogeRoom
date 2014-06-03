@@ -22,7 +22,7 @@ stores
 ==
 - cloth - ?
 - fur - boots with the fur
-- wood - electricity
+- electricity - electricity
 - scales - shutter shades
 
 other
