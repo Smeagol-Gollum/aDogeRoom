@@ -54,7 +54,7 @@ div.storeRow {
 
 div#stores:before {
 	position: absolute;
-	background: transparent;
+	background: #c4ff00;
 	content: "stores";
 	left: 8px;
 	top: -13px;	
