@@ -14,8 +14,8 @@ var Room = {
 	buttons:{},
 	
 	Craftables: {
-		'lost and found area': {
-			name: _('lost and found area'),
+		'trap': {
+			name: _('trap'),
 			button: null,
 			maximum: 10,
 			availableMsg: _('build-doge says she can set up "lost-and-found" stations to get things that people lose, for free!'),
