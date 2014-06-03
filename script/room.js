@@ -907,7 +907,7 @@ var Room = {
 	build: function(buildBtn) {
 		var thing = $(buildBtn).attr('buildThing');
 		if(Room.temperature.value <= Room.TempEnum.Cold.value) {
-			Notifications.notify(Room, _("builder just shivers"));
+			Notifications.notify(Room, _("builder-doge just shivers. the laptop isn't charged enough for her to google what she needs to do."));
 			return false;
 		}
 		var craftable = Room.Craftables[thing];
