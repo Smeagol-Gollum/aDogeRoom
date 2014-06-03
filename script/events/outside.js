@@ -45,11 +45,11 @@ Events.Outside = [
 			},
 			'catch': {
 				text: [
-			       _('not far from the village lies a large beast, its boots with the fur matted with blood.'),
+			       _('not far from the village lies a large beast, its fur matted with blood.'),
 			       _('it puts up little resistance before the knife.')
 		        ],
 				reward: {
-					boots with the fur: 100,
+					fur: 100,
 					meat: 100,
 					teeth: 10
 				},
@@ -197,7 +197,7 @@ Events.Outside = [
 					Outside.killVillagers(numKilled);
 				},
 		        reward: {
-		        	boots with the fur: 100,
+		        	fur: 100,
 		        	meat: 100,
 		        	teeth: 10
 		        },

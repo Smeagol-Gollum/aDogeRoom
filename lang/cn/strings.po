@@ -683,7 +683,7 @@ msgid "meat"
 msgstr "鲜肉"
 
 #: ../../script/localization.js:3
-msgid "boots with the fur"
+msgid "fur"
 msgstr "毛皮"
 
 #: ../../script/localization.js:3
@@ -803,7 +803,7 @@ msgid "thieves"
 msgstr "小偷"
 
 #: ../../script/localization.js:9
-msgid "not enough boots with the fur"
+msgid "not enough fur"
 msgstr "皮毛不够了"
 
 #: ../../script/localization.js:9
@@ -1191,7 +1191,7 @@ msgid "Outside"
 msgstr "外面"
 
 #: ../../script/outside.js:100
-msgid "scraps of boots with the fur"
+msgid "scraps of fur"
 msgstr "皮毛下脚料"
 
 #: ../../script/outside.js:105
@@ -1409,7 +1409,7 @@ msgstr "回屋"
 
 #: ../../script/events/room.js:89
 msgid ""
-"a bundle of sticks lies just beyond the threshold, wrapped in coarse boots with the boots with the fur."
+"a bundle of sticks lies just beyond the threshold, wrapped in coarse furs."
 msgstr "一大捆用毛皮绑着的木头躺在门槛上."
 
 #: ../../script/events/room.js:90
@@ -1454,7 +1454,7 @@ msgid "a beggar arrives."
 msgstr "来了一个乞丐."
 
 #: ../../script/events/room.js:195
-msgid "asks for any spare boots with the boots with the fur to keep him warm at night."
+msgid "asks for any spare furs to keep him warm at night."
 msgstr "乞求能给他一点暖和身子的皮毛."
 
 #: ../../script/events/room.js:197
@@ -1524,7 +1524,7 @@ msgstr "流浪汉回来了, 带回来了一堆木头."
 
 #: ../../script/events/room.js:335
 msgid ""
-"a wanderer arrives with an empty cart. says if she leaves with boots with the boots with the fur, she'll "
+"a wanderer arrives with an empty cart. says if she leaves with furs, she'll "
 "be back with more."
 msgstr "一个流浪女带着一个空筐子来到了木屋, 说如果能给她一些皮毛带走, 她之后会带来更多."
 
@@ -1537,11 +1537,11 @@ msgid "turn her away"
 msgstr "撵走她"
 
 #: ../../script/events/room.js:358 ../../script/events/room.js:377
-msgid "the wanderer leaves, cart loaded with boots with the boots with the fur"
+msgid "the wanderer leaves, cart loaded with furs"
 msgstr "流浪女离开了, 筐子满载皮毛"
 
 #: ../../script/events/room.js:364 ../../script/events/room.js:383
-msgid "the mysterious wanderer returns, cart piled high with boots with the boots with the fur."
+msgid "the mysterious wanderer returns, cart piled high with furs."
 msgstr "流浪女回来了, 带回来了许多皮毛."
 
 #: ../../script/events/room.js:398
@@ -2889,7 +2889,7 @@ msgid "go home"
 msgstr "返回"
 
 #: ../../script/events/outside.js:48
-msgid "not far from the village lies a large beast, its boots with the fur matted with blood."
+msgid "not far from the village lies a large beast, its fur matted with blood."
 msgstr "在离开村子的不远处发现了一只巨大的野兽, 它的皮毛覆满了暗淡的血液."
 
 #: ../../script/events/outside.js:49

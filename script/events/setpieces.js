@@ -118,7 +118,7 @@ Events.Setpieces = {
 				health: 5,
 				notification: _('a startled beast defends its home'),
 				loot: {
-					'boots with the fur': {
+					'fur': {
 						min: 1,
 						max: 10,
 						chance: 1
@@ -256,7 +256,7 @@ Events.Setpieces = {
 				health: 5,
 				notification: _('a startled beast defends its home'),
 				loot: {
-					'boots with the fur': {
+					'fur': {
 						min: 1,
 						max: 3,
 						chance: 1
@@ -320,7 +320,7 @@ Events.Setpieces = {
 				health: 10,
 				notification: _('a large beast charges out of the dark'),
 				loot: {
-					'boots with the fur': {
+					'fur': {
 						min: 1,
 						max: 3,
 						chance: 1
@@ -387,7 +387,7 @@ Events.Setpieces = {
 						max: 10,
 						chance: 1
 					},
-					'boots with the fur': {
+					'fur': {
 						min: 5,
 						max: 10,
 						chance: 1
@@ -680,7 +680,7 @@ Events.Setpieces = {
   						max: 5,
   						chance: 1
   					},
-  					'boots with the fur': {
+  					'fur': {
   						min: 5,
   						max: 10,
   						chance: 1
@@ -824,7 +824,7 @@ Events.Setpieces = {
   						max: 5,
   						chance: 1
   					},
-  					'boots with the fur': {
+  					'fur': {
   						min: 5,
   						max: 10,
   						chance: 1
@@ -873,7 +873,7 @@ Events.Setpieces = {
   						max: 5,
   						chance: 1
   					},
-  					'boots with the fur': {
+  					'fur': {
   						min: 5,
   						max: 10,
   						chance: 1
@@ -1565,7 +1565,7 @@ Events.Setpieces = {
   						max: 5,
   						chance: 0.8
   					},
-  					'boots with the fur': {
+  					'fur': {
   						min: 1,
   						max: 5,
   						chance: 0.8
@@ -1939,7 +1939,7 @@ Events.Setpieces = {
   				attackDelay: 0.25,
   				health: 60,
   				loot: {
-  					'boots with the fur': {
+  					'fur': {
   						min: 5,
   						max: 10,
   						chance: 0.8
@@ -2805,7 +2805,7 @@ Events.Setpieces = {
 					  max: 3,
 					  chance: 0.5
 					},
-					'boots with the fur': {
+					'fur': {
 					  min: 1,
 					  max: 5,
 					  chance: 0.8

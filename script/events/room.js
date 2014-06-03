@@ -5,7 +5,7 @@ Events.Room = [
 	{ /* The Nomad  --  Merchant */
 		title: _('The Nomad'),
 		isAvailable: function() {
-			return Engine.activeModule == Room && $SM.get('stores.boots with the fur', true) > 0;
+			return Engine.activeModule == Room && $SM.get('stores.fur', true) > 0;
 		},
 		scenes: {
 			'start': {
@@ -17,17 +17,17 @@ Events.Room = [
 				buttons: {
 					'buyScales': {
 						text: _('buy scales'),
-						cost: { 'boots with the fur': 100 },
+						cost: { 'fur': 100 },
 						reward: { 'scales': 1 }
 					},
 					'buyTeeth': {
 						text: _('buy teeth'),
-						cost: { 'boots with the fur': 200 },
+						cost: { 'fur': 200 },
 						reward: { 'teeth': 1 }
 					},
 					'buyBait': {
 						text: _('buy bait'),
-						cost: { 'boots with the fur': 5 },
+						cost: { 'fur': 5 },
 						reward: { 'bait': 1 },
 						notification: _('traps are more effective with bait.')
 					},
@@ -36,7 +36,7 @@ Events.Room = [
 							return $SM.get('stores.compass', true) < 1;
 						},
 						text: _('buy compass'),
-						cost: { boots with the fur: 300, scales: 15, teeth: 5 },
+						cost: { fur: 300, scales: 15, teeth: 5 },
 						reward: { 'compass': 1 },
 						notification: _('the old compass is dented and dusty, but it looks to work.'),
 						onChoose: Path.openPath
@@ -48,7 +48,7 @@ Events.Room = [
 				}
 			}
 		}
-	}, { /* Noises Outside  --  gain wood/boots with the fur */
+	}, { /* Noises Outside  --  gain wood/fur */
 		title: _('Noises'),
 		isAvailable: function() {
 			return Engine.activeModule == Room && $SM.get('stores.wood');
@@ -84,9 +84,9 @@ Events.Room = [
 				}
 			},
 			'stuff': {
-				reward: { wood: 100, boots with the fur: 10 },
+				reward: { wood: 100, fur: 10 },
 				text: [
-					_('a bundle of sticks lies just beyond the threshold, wrapped in coarse boots with the boots with the fur.'),
+					_('a bundle of sticks lies just beyond the threshold, wrapped in coarse furs.'),
 					_('the night is silent.')
 				],
 				buttons: {
@@ -183,27 +183,27 @@ Events.Room = [
 			}
 		}
 	},
-	{ /* The Beggar  --  trade boots with the fur for better good */
+	{ /* The Beggar  --  trade fur for better good */
 		title: _('The Beggar'),
 		isAvailable: function() {
-			return Engine.activeModule == Room && $SM.get('stores.boots with the fur');
+			return Engine.activeModule == Room && $SM.get('stores.fur');
 		},
 		scenes: {
 			start: {
 				text: [
 			       _('a beggar arrives.'),
-			       _('asks for any spare boots with the boots with the fur to keep him warm at night.')
+			       _('asks for any spare furs to keep him warm at night.')
 				],
 				notification: _('a beggar arrives'),
 				buttons: {
-					'50boots with the boots with the fur': {
+					'50furs': {
 						text: _('give 50'),
-						cost: {boots with the fur: 50},
+						cost: {fur: 50},
 						nextScene: { 0.5: 'scales', 0.8: 'teeth', 1: 'cloth' }
 					},
-					'100boots with the boots with the fur': {
+					'100furs': {
 						text: _('give 100'),
-						cost: {boots with the fur: 100},
+						cost: {fur: 100},
 						nextScene: { 0.5: 'teeth', 0.8: 'scales', 1: 'cloth' }
 					},
 					'deny': {
@@ -324,28 +324,28 @@ Events.Room = [
 		}
 	},
 	
-	{ /* Mysterious Wanderer  --  boots with the fur gambling */
+	{ /* Mysterious Wanderer  --  fur gambling */
 		title: _('The Mysterious Wanderer'),
 		isAvailable: function() {
-			return Engine.activeModule == Room && $SM.get('stores.boots with the fur');
+			return Engine.activeModule == Room && $SM.get('stores.fur');
 		},
 		scenes: {
 			start: {
 				text: [
-			       _('a wanderer arrives with an empty cart. says if she leaves with boots with the boots with the fur, she\'ll be back with more.'),
+			       _('a wanderer arrives with an empty cart. says if she leaves with furs, she\'ll be back with more.'),
 			       _("builder's not sure she's to be trusted.")
 				],
 				notification: _('a mysterious wanderer arrives'),
 				buttons: {
-					'100boots with the fur': {
+					'100fur': {
 						text: _('give 100'),
-						cost: {boots with the fur: 100},
-						nextScene: { 1: '100boots with the fur'}
+						cost: {fur: 100},
+						nextScene: { 1: '100fur'}
 					},
-					'500boots with the fur': {
+					'500fur': {
 						text: _('give 500'),
-						cost: {boots with the fur: 500},
-						nextScene: { 1: '500boots with the fur' }
+						cost: {fur: 500},
+						nextScene: { 1: '500fur' }
 					},
 					'deny': {
 						text: _('turn her away'),
@@ -353,15 +353,15 @@ Events.Room = [
 					}
 				}
 			},
-			'100boots with the fur': {
+			'100fur': {
 				text: [
-			       _('the wanderer leaves, cart loaded with boots with the boots with the fur')
+			       _('the wanderer leaves, cart loaded with furs')
 			    ],
 			    onLoad: function() {
 			    	if(Math.random() < 0.5) {
 			    		setTimeout(function() {
-			    			$SM.add('stores.boots with the fur', 300);
-			    			Notifications.notify(Room, _('the mysterious wanderer returns, cart piled high with boots with the boots with the fur.'));
+			    			$SM.add('stores.fur', 300);
+			    			Notifications.notify(Room, _('the mysterious wanderer returns, cart piled high with furs.'));
 			    		}, 60 * 1000);
 			    	}
 			    },
@@ -372,15 +372,15 @@ Events.Room = [
 			    	}
 			    }
 			},
-			'500boots with the fur': {
+			'500fur': {
 				text: [
-				       _('the wanderer leaves, cart loaded with boots with the boots with the fur')
+				       _('the wanderer leaves, cart loaded with furs')
 			    ],
 			    onLoad: function() {
 			    	if(Math.random() < 0.3) {
 			    		setTimeout(function() {
-			    			$SM.add('stores.boots with the fur', 1500);
-			    			Notifications.notify(Room, _('the mysterious wanderer returns, cart piled high with boots with the boots with the fur.'));
+			    			$SM.add('stores.fur', 1500);
+			    			Notifications.notify(Room, _('the mysterious wanderer returns, cart piled high with furs.'));
 			    		}, 60 * 1000);
 			    	}
 			    },
@@ -409,13 +409,13 @@ Events.Room = [
 				buttons: {
 					'buyMap': {
 						text: _('buy map'),
-						cost: { 'boots with the fur': 200, 'scales': 10 },
+						cost: { 'fur': 200, 'scales': 10 },
 						notification: _('the map uncovers a bit of the world'),
 						onChoose: World.applyMap
 					},
 					'learn': {
 						text: _('learn scouting'),
-						cost: { 'boots with the fur': 1000, 'scales': 50, 'teeth': 20 },
+						cost: { 'fur': 1000, 'scales': 50, 'teeth': 20 },
 						available: function() {
 							return !$SM.hasPerk('scout');
 						},
@@ -449,7 +449,7 @@ Events.Room = [
 						text: _('agree'),
 						cost: {
 							'cured meat': 100,
-							'boots with the fur': 100,
+							'fur': 100,
 							'torch': 1
 						},
 						nextScene: {1: 'agree'}

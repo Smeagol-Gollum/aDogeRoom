@@ -20,7 +20,7 @@ Events.Encounters = [
  				attackDelay: 1,
  				health: 5,
  				loot: {
- 					'boots with the fur': {
+ 					'fur': {
  						min: 1,
  						max: 3,
  						chance: 1
@@ -174,7 +174,7 @@ Events.Encounters = [
  				attackDelay: 1,
  				health: 25,
  				loot: {
- 					'boots with the fur': {
+ 					'fur': {
  						min: 5,
  						max: 10,
  						chance: 1
@@ -291,7 +291,7 @@ Events.Encounters = [
  				attackDelay: 1,
  				health: 45,
  				loot: {
- 					'boots with the fur': {
+ 					'fur': {
  						min: 5,
  						max: 10,
  						chance: 1

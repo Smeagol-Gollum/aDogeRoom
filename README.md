@@ -21,7 +21,7 @@ buildings
 stores
 ==
 - cloth - ?
-- boots with the fur - boots with the boots with the fur
+- fur - boots with the fur
 - wood - electricity
 - scales - shutter shades
 
