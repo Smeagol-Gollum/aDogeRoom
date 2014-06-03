@@ -494,7 +494,7 @@ var Room = {
 		// Create the light button
 		new Button.Button({
 			id: 'lightButton',
-			text: _('let there be light (fire)'),
+			text: _('turn on laptop'),
 			click: Room.lightFire,
 			cooldown: Room._STOKE_COOLDOWN,
 			width: '80px',
@@ -504,7 +504,7 @@ var Room = {
 		// Create the stoke button
 		new Button.Button({
 			id: 'stokeButton',
-			text: _("stoke fire"),
+			text: _("charge laptop"),
 			click: Room.stokeFire,
 			cooldown: Room._STOKE_COOLDOWN,
 			width: '80px',
@@ -542,7 +542,7 @@ var Room = {
 		setTimeout($SM.collectIncome, 1000);
 
 		Notifications.notify(Room, _("the room is {0}", Room.temperature.text));
-		Notifications.notify(Room, _("the fire is {0}", Room.fire.text));
+		Notifications.notify(Room, _("the laptop is {0}", Room.fire.text));
 	},
 	
 	options: {}, // Nothing for now
@@ -550,7 +550,7 @@ var Room = {
 	onArrival: function(transition_diff) {
 		Room.setTitle();
 		if(Room.changed) {
-			Notifications.notify(Room, _("the fire is {0}", Room.fire.text));
+			Notifications.notify(Room, _("the laptop is {0}", Room.fire.text));
 			Notifications.notify(Room, _("the room is {0}", Room.temperature.text));
 			Room.changed = false;
 		}
@@ -592,11 +592,11 @@ var Room = {
 			}
 			return null;
 		},
-		Dead: { value: 0, text: _('dead') },
-		Smoldering: { value: 1, text: _('smoldering') },
-		Flickering: { value: 2, text: _('flickering') },
-		Burning: { value: 3, text: _('burning') },
-		Roaring: { value: 4, text: _('roaring') }
+		Dead: { value: 0, text: _('Dead (0%)') },
+		Smoldering: { value: 1, text: _('25%') },
+		Flickering: { value: 2, text: _('Half Charged (50%)') },
+		Burning: { value: 3, text: _('75%') },
+		Roaring: { value: 4, text: _('Fully Charged (100%)') }
 	},
 	
 	setTitle: function() {
