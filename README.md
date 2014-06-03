@@ -15,12 +15,17 @@ A Minimalist Text Adventure Game
 
 buildings
 ==
-trap - lost and found
-cart - high power batteries 
+- trap - lost and found
+- cart - high power batteries 
 
 stores
 ==
-cloth - ?
-fur - boots with the fur
-wood - electricity
+- cloth - ?
+- fur - boots with the fur
+- wood - electricity
+- scales - shutter shades
 
+other
+==
+- fire - laptop
+- wanderer - shibe
