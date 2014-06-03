@@ -593,9 +593,9 @@ var Room = {
 			return null;
 		},
 		Dead: { value: 0, text: _('dead (0%)') },
-		Smoldering: { value: 1, text: _('25%') },
+		Smoldering: { value: 1, text: _('25% charged') },
 		Flickering: { value: 2, text: _('half charged (50%)') },
-		Burning: { value: 3, text: _('75%') },
+		Burning: { value: 3, text: _('charging quickly, and is 75% full') },
 		Roaring: { value: 4, text: _('fully charged (100%)') }
 	},
 	
