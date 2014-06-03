@@ -9,11 +9,6 @@ body, .tooltip, select.menuBtn {
 	letter-spacing: normal;
 	background-color: #c4ff00;
 }
-
-#storesContainer {
-	background-color: #c4ff00;
-}
-
 html {
 	height: 100%;
 }
