@@ -97,7 +97,7 @@ var Outside = {
 		{
 			rollUnder: 0.5,
 			name: 'fur',
-			message: _('scraps of fur')
+			message: _('a pair of boots with the fur')
 		},
 		{
 			rollUnder: 0.75,
@@ -107,7 +107,7 @@ var Outside = {
 		{
 			rollUnder: 0.85,
 			name: 'scales',
-			message: _('strange scales')
+			message: _('a pair of shutter shades')
 		},
 		{
 			rollUnder: 0.93,
@@ -117,7 +117,7 @@ var Outside = {
 		{
 			rollUnder: 0.995,
 			name: 'cloth',
-			message: _('tattered cloth')
+			message: _('an old shirt which reads "swag"')
 		},
 		{
 			rollUnder: 1.0,
