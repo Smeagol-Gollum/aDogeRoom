@@ -558,7 +558,7 @@ var Room = {
 			$SM.add('game.builder.level', 1);
 			$SM.setIncome('builder', {
 				delay: 10,
-				stores: {'wood' : 2 }
+				stores: {'electricity' : 2 }
 			});
 			Room.updateIncomeView();
 			Notifications.notify(Room, _("the stranger is standing by the fire. she says she can help. she was a builder-doge before."));
