@@ -30,11 +30,11 @@ var Room = {
 			}
 		},
 		'cart': {
-			name: _('cart'),
+			name: _('high-capacity batteries'),
 			button: null,
 			maximum: 1,
-			availableMsg: _('builder-doge says she can make a cart for carrying wood'),
-			buildMsg: _('the rickety cart will carry more wood from the forest'),
+			availableMsg: _('builder-doge says she found a wikiHow on making high-capacity batteries'),
+			buildMsg: _('these new batteries can hold more electricity'),
 			type: 'building',
 			cost: function() {
 				return {
@@ -43,7 +43,7 @@ var Room = {
 			}
 		},
 		'hut': {
-			name: _('hut'),
+			name: _('doghouse'),
 			button: null,
 			maximum: 20,
 			availableMsg: _("builder-doge says there are more shibas. says they'll work, too."),
