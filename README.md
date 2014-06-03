@@ -13,3 +13,14 @@ A Minimalist Text Adventure Game
 - [Git Repo](http://github.com/lilj/adarkroom)
 
 
+buildings
+==
+trap - lost and found
+cart - high power batteries 
+
+stores
+==
+cloth - ?
+fur - boots with the fur
+wood - electricity
+
