@@ -20,7 +20,7 @@ var Outside = {
 			name: _('hunter'),
 			delay: 10,
 			stores: {
-				'fur': 0.5,
+				'boots with the fur': 0.5,
 				'meat': 0.5
 			}
 		},
@@ -36,7 +36,7 @@ var Outside = {
 			name: _('tanner'),
 			delay: 10,
 			stores: {
-				'fur': -5,
+				'boots with the fur': -5,
 				'leather': 1
 			}
 		},
@@ -96,8 +96,8 @@ var Outside = {
 	TrapDrops: [
 		{
 			rollUnder: 0.5,
-			name: 'fur',
-			message: _('a pair of boots with the fur')
+			name: 'boots with the fur',
+			message: _('a pair of boots with the boots with the fur')
 		},
 		{
 			rollUnder: 0.75,

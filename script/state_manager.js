@@ -377,7 +377,7 @@ var StateManager = {
 			delay: 10,
 			stores: {
 				'wood': -10,
-				'fur': -5,
+				'boots with the fur': -5,
 				'meat': -5
 			}
 		});
