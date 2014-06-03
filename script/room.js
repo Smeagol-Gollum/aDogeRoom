@@ -592,15 +592,15 @@ var Room = {
 			}
 			return null;
 		},
-		Dead: { value: 0, text: _('Dead (0%)') },
+		Dead: { value: 0, text: _('dead (0%)') },
 		Smoldering: { value: 1, text: _('25%') },
-		Flickering: { value: 2, text: _('Half Charged (50%)') },
+		Flickering: { value: 2, text: _('half charged (50%)') },
 		Burning: { value: 3, text: _('75%') },
-		Roaring: { value: 4, text: _('Fully Charged (100%)') }
+		Roaring: { value: 4, text: _('fully charged (100%)') }
 	},
 	
 	setTitle: function() {
-		var title = Room.fire.value < 2 ? _("A Doge Room") : _("A Firelit Room");
+		var title = Room.fire.value < 2 ? _("A Doge Room") : _("A Screenlit Room");
 		if(Engine.activeModule == this) {
 			document.title = title;
 		}
