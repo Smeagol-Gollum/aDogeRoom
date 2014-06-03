@@ -14,7 +14,7 @@ var Room = {
 	buttons:{},
 	
 	Craftables: {
-		'trap': {
+		'lost-and-found area': {
 			name: _('lost-and-found area'),
 			button: null,
 			maximum: 10,
