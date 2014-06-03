@@ -507,7 +507,7 @@ var Outside = {
 			if(btn.length == 0) {
 				new Button.Button({
 					id: 'trapsButton',
-					text: _("check lost-and-founds"),
+					text: _("check traps"),
 					click: Outside.checkTraps,
 					cooldown: Outside._TRAPS_DELAY,
 					width: '80px'
