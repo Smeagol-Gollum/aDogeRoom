@@ -5,15 +5,15 @@ div#village {
 	border: 1px solid black;
 	cursor: default;
 	padding: 5px 10px;
-	background-color: #c4ff00;
 	width: 200px;
+	background-color: #c4ff00;
 }
 
 div#population {
 	position: absolute;
 	top: -13px;
 	right: 10px;
-	background-color: white;
+	background-color: #c4ff00;
 }
 
 .noHuts #population {
@@ -22,7 +22,7 @@ div#population {
 
 div#village:before {
 	position: absolute;
-	background: white;
+	background-color: #c4ff00;
 	content: "village";
 	left: 8px;
 	top: -13px;
