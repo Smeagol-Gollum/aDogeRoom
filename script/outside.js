@@ -20,7 +20,7 @@ var Outside = {
 			name: _('hunter'),
 			delay: 10,
 			stores: {
-				'fur': 0.5,
+				'boots': 0.5,
 				'meat': 0.5
 			}
 		},
@@ -36,7 +36,7 @@ var Outside = {
 			name: _('tanner'),
 			delay: 10,
 			stores: {
-				'fur': -5,
+				'boots': -5,
 				'leather': 1
 			}
 		},
@@ -96,7 +96,7 @@ var Outside = {
 	TrapDrops: [
 		{
 			rollUnder: 0.5,
-			name: 'fur',
+			name: 'boots',
 			message: _('a pair of boots with the fur')
 		},
 		{
@@ -107,7 +107,7 @@ var Outside = {
 		{
 			rollUnder: 0.85,
 			name: 'scales',
-			message: _('a pair of sdogehouseter shades')
+			message: _('a pair of shutter shades')
 		},
 		{
 			rollUnder: 0.93,
@@ -138,7 +138,7 @@ var Outside = {
 		}
 		
 		// Create the outside tab
-		this.tab = Header.addLocation(_("A Silent Forest"), "outside", Outside);
+		this.tab = Header.addLocation(_("A Box Near the Corner Store"), "outside", Outside);
 		
 		// Create the Outside panel
 		this.panel = $('<div>').attr('id', "outsidePanel")
@@ -526,17 +526,15 @@ var Outside = {
 		var numHuts = $SM.get('game.buildings["dogehouse"]', true);
 		var title;
 		if(numHuts == 0) {
-			title = _("A Silent Forest");
+			title = _("A Box Near the Corner Store");
 		} else if(numHuts == 1) {
-			title = _("A Lonely Doghouse");
+			title = _("A Lonely Dogehouse at the Park");
 		} else if(numHuts <= 4) {
-			title = _("A Tiny Shibe-Village");
+			title = _("A Tiny Apartment Full of Shibes");
 		} else if(numHuts <= 8) {
-			title = _("A Modest Village of Doges");
-		} else if(numHuts <= 14) {
-			title = _("A Large Shiba Village");
+			title = _("A Modest Apartment of Doges");
 		} else {
-			title = _("A Tail-Wagging Village");
+			title = _("A Tail-Wagging Collective of Shibas");
 		}
 		
 		if(Engine.activeModule == this) {
@@ -558,7 +556,7 @@ var Outside = {
 	},
 	
 	gatherWood: function() {
-		Notifications.notify(Outside, _("dry brush and dead branches litter the forest floor"));
+		Notifications.notify(Outside, _("the sun shines brightly today"));
 		var gatherAmt = $SM.get('game.buildings["batteries"]', true) > 0 ? 50 : 10;
 		$SM.add('stores.electricity', gatherAmt);
 	},

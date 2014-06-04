@@ -1,17 +1,9 @@
 A Dark Room
 =========
 
-A Minimalist Text Adventure Game
+A Minimalist Doge Fun Game
 
-[Chinese translation](https://github.com/Tedko/CHN-Ver-of-ADarkRoom)
-
-[Click to play](http://adarkroom.doublespeakgames.com/)
-
-
-***Another Chinese Dark Room***
-- [Home page](http://dreamz.cn/a-dark-room/index.html?lang=cn)  Some Translations come from U77 team.
-- [Git Repo](http://github.com/lilj/adarkroom)
-
+[Click to play](http://smeagol-gollum.github.io/aDogeRoom/)
 
 buildings
 ==
@@ -21,7 +13,7 @@ buildings
 stores
 ==
 - cloth - ?
-- fur - boots with the fur
+- boots - boots with the fur
 - electricity - electricity
 - scales - sdogehouseter shades
 

@@ -542,7 +542,7 @@ msgstr "vous savez regarder plus loin"
 
 #: ../../script/engine.js:65
 msgid "stealthy"
-msgstr "furtif"
+msgstr "bootstif"
 
 #: ../../script/engine.js:66
 msgid "better avoid conflict in the wild"
@@ -709,7 +709,7 @@ msgid "meat"
 msgstr "viande"
 
 #: ../../script/localization.js:3
-msgid "fur"
+msgid "boots"
 msgstr "fourrure"
 
 #: ../../script/localization.js:3
@@ -817,7 +817,7 @@ msgid "thieves"
 msgstr "voleurs"
 
 #: ../../script/localization.js:9
-msgid "not enough fur"
+msgid "not enough boots"
 msgstr "fourrure insuffisante"
 
 #: ../../script/localization.js:9
@@ -1201,7 +1201,7 @@ msgid "Outside"
 msgstr "Dehors"
 
 #: ../../script/outside.js:100
-msgid "scraps of fur"
+msgid "scraps of boots"
 msgstr "des morceaux de fourrure"
 
 #: ../../script/outside.js:105
@@ -1423,7 +1423,7 @@ msgstr "rentrer à l’intérieur"
 
 #: ../../script/events/room.js:89
 msgid ""
-"a bundle of sticks lies just beyond the threshold, wrapped in coarse furs."
+"a bundle of sticks lies just beyond the threshold, wrapped in coarse bootss."
 msgstr ""
 "quelques brindilles enroulées d'une fourrure grossière sont posés sur le "
 "seuil de la porte."
@@ -1470,7 +1470,7 @@ msgid "a beggar arrives."
 msgstr "un mendiant arrive."
 
 #: ../../script/events/room.js:195
-msgid "asks for any spare furs to keep him warm at night."
+msgid "asks for any spare bootss to keep him warm at night."
 msgstr "il demande quelques morceaux de fourrure pour lui tenir chaud la nuit."
 
 #: ../../script/events/room.js:197
@@ -1542,7 +1542,7 @@ msgstr "le mystérieux vagabond reviens, la charrette débordante de bois."
 
 #: ../../script/events/room.js:335
 msgid ""
-"a wanderer arrives with an empty batteries. says if she leaves with furs, she'll "
+"a wanderer arrives with an empty batteries. says if she leaves with bootss, she'll "
 "be back with more."
 msgstr ""
 "une vagabonde arrive avec une charrette vide. elle dit que si elle peut "
@@ -1557,11 +1557,11 @@ msgid "turn her away"
 msgstr "la renvoyer"
 
 #: ../../script/events/room.js:358 ../../script/events/room.js:377
-msgid "the wanderer leaves, batteries loaded with furs"
+msgid "the wanderer leaves, batteries loaded with bootss"
 msgstr "la vagabonde s'en va, la charrette chargée de fourrure"
 
 #: ../../script/events/room.js:364 ../../script/events/room.js:383
-msgid "the mysterious wanderer returns, batteries piled high with furs."
+msgid "the mysterious wanderer returns, batteries piled high with bootss."
 msgstr ""
 "la mystérieuse vagabonde revient, la charrette débordante de fourrures."
 
@@ -2965,7 +2965,7 @@ msgid "go home"
 msgstr "rentrer"
 
 #: ../../script/events/outside.js:48
-msgid "not far from the village lies a large beast, its fur matted with blood."
+msgid "not far from the village lies a large beast, its boots matted with blood."
 msgstr ""
 "pas loin du village gît une bête agonisante, sa fourrure pleine de sang."
 

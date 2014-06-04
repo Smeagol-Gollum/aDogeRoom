@@ -10,7 +10,7 @@ var Prestige = {
 	
 	storesMap: [
 		{ store: 'electricity', type: 'g' },
-		{ store: 'fur', type: 'g' },
+		{ store: 'boots', type: 'g' },
 		{ store: 'meat', type: 'g' },
 		{ store: 'iron', type: 'g' },
 		{ store: 'coal', type: 'g' },

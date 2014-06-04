@@ -191,7 +191,7 @@ Software with a work governed by one or more Secondary Licenses, and the
 Covered Software is not Incompatible With Secondary Licenses, this
 License permits You to additionally distribute such Covered Software
 under the terms of such Secondary License(s), so that the recipient of
-the Larger Work may, at their option, further distribute the Covered
+the Larger Work may, at their option, bootsther distribute the Covered
 Software under the terms of either this License or such Secondary
 License(s).
 
