@@ -5,6 +5,7 @@ div#village {
 	border: 1px solid black;
 	cursor: default;
 	padding: 5px 10px;
+	background-color: #c4ff00;
 	width: 200px;
 }
 
