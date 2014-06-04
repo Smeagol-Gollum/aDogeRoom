@@ -1242,7 +1242,7 @@ Events.Setpieces = {
 			'a3': {
 				text: [
 			       _('a large shanty town sprawls across the streets.'),
-			       _('faces, darkened by soot and blood, stare out from crooked huts.')
+			       _('faces, darkened by soot and blood, stare out from crooked dogehouses.')
 		        ],
 		        buttons: {
 					'continue': {	
@@ -2141,7 +2141,7 @@ Events.Setpieces = {
 			},
 			
 			'd9': {
-				notification: _('a squatter stands firmly in the doorway of a small hut.'),
+				notification: _('a squatter stands firmly in the doorway of a small dogehouse.'),
 				combat: true,
 				enemy: 'squatter',
 				chara: 'S',
@@ -2528,7 +2528,7 @@ Events.Setpieces = {
 			
 			'end9': {
 				text: [
-				   _('inside the hut, a child cries.'),
+				   _('inside the dogehouse, a child cries.'),
 				   _("a few belongings rest against the walls."),
 				   _("there's nothing else here.")
 				],

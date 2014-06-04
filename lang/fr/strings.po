@@ -49,7 +49,7 @@ msgid "the rickety cart will carry more electricity from the forest"
 msgstr "la charrette délabrée aidera à ramener plus de bois de la forêt"
 
 #: ../../script/room.js:46
-msgid "hut"
+msgid "dogehouse"
 msgstr "cabane"
 
 #: ../../script/room.js:49
@@ -59,12 +59,12 @@ msgstr ""
 "travailleront. eux aussi."
 
 #: ../../script/room.js:50
-msgid "builder puts up a hut, out in the forest. says word will get around."
+msgid "builder puts up a dogehouse, out in the forest. says word will get around."
 msgstr ""
 "l'ouvrière construit une cabane dans la foret. Elle dit que ça se saura."
 
 #: ../../script/room.js:51
-msgid "no more room for huts."
+msgid "no more room for dogehouses."
 msgstr "il n'y a plus de place pour des cabanes."
 
 #: ../../script/room.js:61
@@ -1237,7 +1237,7 @@ msgid "a stranger arrives in the night"
 msgstr "un étranger arrive durant la nuit"
 
 #: ../../script/outside.js:185
-msgid "a weathered family takes up in one of the huts."
+msgid "a weathered family takes up in one of the dogehouses."
 msgstr "une famille épuisée s'intalle dans une cabane."
 
 #: ../../script/outside.js:187
@@ -2164,7 +2164,7 @@ msgid "a large shanty town sprawls across the streets."
 msgstr "un grand bidonville s'étend le long des rues."
 
 #: ../../script/events/setpieces.js:1245
-msgid "faces, darkened by soot and blood, stare out from crooked huts."
+msgid "faces, darkened by soot and blood, stare out from crooked dogehouses."
 msgstr ""
 "dans des cabanes délabrées, des visages noirs de suie et de sang, observent"
 
@@ -2352,7 +2352,7 @@ msgid "a youth lashes out with a tree branch."
 msgstr "un jeune attaque armé d'une branche d'arbre."
 
 #: ../../script/events/setpieces.js:2144
-msgid "a squatter stands firmly in the doorway of a small hut."
+msgid "a squatter stands firmly in the doorway of a small dogehouse."
 msgstr "un squatter se tient fermement devant l'entrée d'une petite cabane."
 
 #: ../../script/events/setpieces.js:2177
@@ -2461,7 +2461,7 @@ msgid "there's nothing else here."
 msgstr "il ny'a rien d'autre ici."
 
 #: ../../script/events/setpieces.js:2531
-msgid "inside the hut, a child cries."
+msgid "inside the dogehouse, a child cries."
 msgstr "à l'intérieur de la cabane, un enfant pleur."
 
 #: ../../script/events/setpieces.js:2532

@@ -107,7 +107,7 @@ var Outside = {
 		{
 			rollUnder: 0.85,
 			name: 'scales',
-			message: _('a pair of shutter shades')
+			message: _('a pair of sdogehouseter shades')
 		},
 		{
 			rollUnder: 0.93,
@@ -171,7 +171,7 @@ var Outside = {
 	},
 	
 	getMaxPopulation: function() {
-		return $SM.get('game.buildings["hut"]', true) * 2;
+		return $SM.get('game.buildings["dogehouse"]', true) * 2;
 	},
 	
 	increasePopulation: function() {
@@ -419,7 +419,7 @@ var Outside = {
 		population.text('pop ' + $SM.get('game.population') + '/' + this.getMaxPopulation());
 		
 		var hasPeeps;
-		if($SM.get('game.buildings["hut"]', true) == 0) {
+		if($SM.get('game.buildings["dogehouse"]', true) == 0) {
 			hasPeeps = false;
 			village.addClass('noHuts');
 		} else {
@@ -523,7 +523,7 @@ var Outside = {
 	},
 	
 	setTitle: function() {
-		var numHuts = $SM.get('game.buildings["hut"]', true);
+		var numHuts = $SM.get('game.buildings["dogehouse"]', true);
 		var title;
 		if(numHuts == 0) {
 			title = _("A Silent Forest");

@@ -23,7 +23,7 @@ stores
 - cloth - ?
 - fur - boots with the fur
 - electricity - electricity
-- scales - shutter shades
+- scales - sdogehouseter shades
 
 other
 ==

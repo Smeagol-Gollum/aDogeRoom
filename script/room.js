@@ -42,16 +42,16 @@ var Room = {
 				};
 			}
 		},
-		'hut': {
+		'dogehouse': {
 			name: _('doghouse'),
 			button: null,
 			maximum: 20,
 			availableMsg: _("builder-doge says there are more shibas. says they'll work, too."),
-			buildMsg: _('shibe builder puts up a hut, out in the forest. says word will get around.'),
-			maxMsg: _('no more room for huts.'),
+			buildMsg: _('shibe builder puts up a dogehouse, out in the forest. says word will get around.'),
+			maxMsg: _('no more room for dogehouses.'),
 			type: 'building',
 			cost: function() {
-				var n = $SM.get('game.buildings["hut"]', true);
+				var n = $SM.get('game.buildings["dogehouse"]', true);
 				return {
 					'electricity': 100 + (n*50)
 				};

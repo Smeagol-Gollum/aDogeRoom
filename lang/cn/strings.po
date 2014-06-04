@@ -46,7 +46,7 @@ msgid "the rickety cart will carry more electricity from the forest"
 msgstr "小推车能从森林里运来更多的木头"
 
 #: ../../script/room.js:46
-msgid "hut"
+msgid "dogehouse"
 msgstr "小木屋"
 
 #: ../../script/room.js:49
@@ -54,11 +54,11 @@ msgid "builder says there are more wanderers. says they'll work, too."
 msgstr "工人们说会有更多的流浪汉会加入我们."
 
 #: ../../script/room.js:50
-msgid "builder puts up a hut, out in the forest. says word will get around."
+msgid "builder puts up a dogehouse, out in the forest. says word will get around."
 msgstr "工人在森林里搭起一座木屋"
 
 #: ../../script/room.js:51
-msgid "no more room for huts."
+msgid "no more room for dogehouses."
 msgstr "没有空间建造木屋了"
 
 #: ../../script/room.js:61
@@ -1227,7 +1227,7 @@ msgid "a stranger arrives in the night"
 msgstr "一个陌生人在夜晚到来"
 
 #: ../../script/outside.js:185
-msgid "a weathered family takes up in one of the huts."
+msgid "a weathered family takes up in one of the dogehouses."
 msgstr "一个经过长途跋涉的家庭搬入了一个木屋"
 
 #: ../../script/outside.js:187
@@ -2118,7 +2118,7 @@ msgid "a large shanty town sprawls across the streets."
 msgstr "一直巨大的棚屋延绵穿过了街区."
 
 #: ../../script/events/setpieces.js:1245
-msgid "faces, darkened by soot and blood, stare out from crooked huts."
+msgid "faces, darkened by soot and blood, stare out from crooked dogehouses."
 msgstr "一张张灰黑布满血迹的脸从小破屋里面伸出来."
 
 #: ../../script/events/setpieces.js:1260
@@ -2302,7 +2302,7 @@ msgid "a youth lashes out with a tree branch."
 msgstr "一个年轻小伙拿了根树枝就跳出来了."
 
 #: ../../script/events/setpieces.js:2144
-msgid "a squatter stands firmly in the doorway of a small hut."
+msgid "a squatter stands firmly in the doorway of a small dogehouse."
 msgstr "有个人坚守在小木屋的门口."
 
 #: ../../script/events/setpieces.js:2177
@@ -2402,7 +2402,7 @@ msgid "there's nothing else here."
 msgstr "没别的了."
 
 #: ../../script/events/setpieces.js:2531
-msgid "inside the hut, a child cries."
+msgid "inside the dogehouse, a child cries."
 msgstr "小木屋内, 一个孩子在哭."
 
 #: ../../script/events/setpieces.js:2532
