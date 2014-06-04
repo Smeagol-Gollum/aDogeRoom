@@ -16,7 +16,7 @@ A Minimalist Text Adventure Game
 buildings
 ==
 - trap - lost and found
-- cart - high power batteries 
+- batteries - high power batteries 
 
 stores
 ==

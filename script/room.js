@@ -29,12 +29,12 @@ var Room = {
 				};
 			}
 		},
-		'cart': {
+		'batteries': {
 			name: _('high-capacity batteries'),
 			button: null,
 			maximum: 1,
 			availableMsg: _('builder-doge says she found a wikiHow on making high-capacity batteries'),
-			buildMsg: _('these new batteries can hold more electricity'),
+			buildMsg: _('these new batteries allow for more electricity to be generated and stored'),
 			type: 'building',
 			cost: function() {
 				return {

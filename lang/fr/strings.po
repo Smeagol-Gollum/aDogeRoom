@@ -36,16 +36,16 @@ msgid "more traps won't help now"
 msgstr "plus de piège n'apportera rien de plus maintenant"
 
 #: ../../script/room.js:33
-msgid "cart"
+msgid "batteries"
 msgstr "charrette"
 
 #: ../../script/room.js:36
-msgid "builder says she can make a cart for carrying electricity"
+msgid "builder says she can make a batteries for carrying electricity"
 msgstr ""
 "l’ouvrière dit qu'elle peut construire un charrette pour ramasser du bois"
 
 #: ../../script/room.js:37
-msgid "the rickety cart will carry more electricity from the forest"
+msgid "the rickety batteries will carry more electricity from the forest"
 msgstr "la charrette délabrée aidera à ramener plus de bois de la forêt"
 
 #: ../../script/room.js:46
@@ -1514,7 +1514,7 @@ msgstr "Le mystérieux vagabond"
 
 #: ../../script/events/room.js:265
 msgid ""
-"a wanderer arrives with an empty cart. says if he leaves with electricity, he'll be "
+"a wanderer arrives with an empty batteries. says if he leaves with electricity, he'll be "
 "back with more."
 msgstr ""
 "un vagabond arrive avec une charrette vide. il dit que s'il peut emmener du "
@@ -1533,16 +1533,16 @@ msgid "give 500"
 msgstr "en donner 500"
 
 #: ../../script/events/room.js:288 ../../script/events/room.js:307
-msgid "the wanderer leaves, cart loaded with electricity"
+msgid "the wanderer leaves, batteries loaded with electricity"
 msgstr "le vagabond s'en va, la charrette chargée de bois"
 
 #: ../../script/events/room.js:294 ../../script/events/room.js:313
-msgid "the mysterious wanderer returns, cart piled high with electricity."
+msgid "the mysterious wanderer returns, batteries piled high with electricity."
 msgstr "le mystérieux vagabond reviens, la charrette débordante de bois."
 
 #: ../../script/events/room.js:335
 msgid ""
-"a wanderer arrives with an empty cart. says if she leaves with furs, she'll "
+"a wanderer arrives with an empty batteries. says if she leaves with furs, she'll "
 "be back with more."
 msgstr ""
 "une vagabonde arrive avec une charrette vide. elle dit que si elle peut "
@@ -1557,11 +1557,11 @@ msgid "turn her away"
 msgstr "la renvoyer"
 
 #: ../../script/events/room.js:358 ../../script/events/room.js:377
-msgid "the wanderer leaves, cart loaded with furs"
+msgid "the wanderer leaves, batteries loaded with furs"
 msgstr "la vagabonde s'en va, la charrette chargée de fourrure"
 
 #: ../../script/events/room.js:364 ../../script/events/room.js:383
-msgid "the mysterious wanderer returns, cart piled high with furs."
+msgid "the mysterious wanderer returns, batteries piled high with furs."
 msgstr ""
 "la mystérieuse vagabonde revient, la charrette débordante de fourrures."
 
@@ -1583,11 +1583,11 @@ msgstr "une éclaireuse s’arrête pour la nuit"
 
 #: ../../script/events/room.js:411
 msgid "buy map"
-msgstr "acheter une carte"
+msgstr "acheter une batteriese"
 
 #: ../../script/events/room.js:413
 msgid "the map uncovers a bit of the world"
-msgstr "la carte dévoile un petit morceau du monde"
+msgstr "la batteriese dévoile un petit morceau du monde"
 
 #: ../../script/events/room.js:417
 msgid "learn scouting"

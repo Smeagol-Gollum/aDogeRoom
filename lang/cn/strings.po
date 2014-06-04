@@ -34,15 +34,15 @@ msgid "more traps won't help now"
 msgstr "更多数量的陷阱已经不能带来益处了"
 
 #: ../../script/room.js:33
-msgid "cart"
+msgid "batteries"
 msgstr "小推车"
 
 #: ../../script/room.js:36
-msgid "builder says she can make a cart for carrying electricity"
+msgid "builder says she can make a batteries for carrying electricity"
 msgstr "工人说她能制作运输木头的小推车"
 
 #: ../../script/room.js:37
-msgid "the rickety cart will carry more electricity from the forest"
+msgid "the rickety batteries will carry more electricity from the forest"
 msgstr "小推车能从森林里运来更多的木头"
 
 #: ../../script/room.js:46
@@ -1498,7 +1498,7 @@ msgstr "神秘流浪者"
 
 #: ../../script/events/room.js:265
 msgid ""
-"a wanderer arrives with an empty cart. says if he leaves with electricity, he'll be "
+"a wanderer arrives with an empty batteries. says if he leaves with electricity, he'll be "
 "back with more."
 msgstr "一个流浪汉带着一个空筐子来到了木屋, 说如果能给她一些木头带走, 他之后会带来更多."
 
@@ -1515,16 +1515,16 @@ msgid "give 500"
 msgstr "给 500"
 
 #: ../../script/events/room.js:288 ../../script/events/room.js:307
-msgid "the wanderer leaves, cart loaded with electricity"
+msgid "the wanderer leaves, batteries loaded with electricity"
 msgstr "流浪汉带着木头离开了"
 
 #: ../../script/events/room.js:294 ../../script/events/room.js:313
-msgid "the mysterious wanderer returns, cart piled high with electricity."
+msgid "the mysterious wanderer returns, batteries piled high with electricity."
 msgstr "流浪汉回来了, 带回来了一堆木头."
 
 #: ../../script/events/room.js:335
 msgid ""
-"a wanderer arrives with an empty cart. says if she leaves with furs, she'll "
+"a wanderer arrives with an empty batteries. says if she leaves with furs, she'll "
 "be back with more."
 msgstr "一个流浪女带着一个空筐子来到了木屋, 说如果能给她一些皮毛带走, 她之后会带来更多."
 
@@ -1537,11 +1537,11 @@ msgid "turn her away"
 msgstr "撵走她"
 
 #: ../../script/events/room.js:358 ../../script/events/room.js:377
-msgid "the wanderer leaves, cart loaded with furs"
+msgid "the wanderer leaves, batteries loaded with furs"
 msgstr "流浪女离开了, 筐子满载皮毛"
 
 #: ../../script/events/room.js:364 ../../script/events/room.js:383
-msgid "the mysterious wanderer returns, cart piled high with furs."
+msgid "the mysterious wanderer returns, batteries piled high with furs."
 msgstr "流浪女回来了, 带回来了许多皮毛."
 
 #: ../../script/events/room.js:398

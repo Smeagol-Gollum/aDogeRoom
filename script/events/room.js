@@ -262,7 +262,7 @@ Events.Room = [
 		scenes: {
 			start: {
 				text: [
-			       _('a wanderer arrives with an empty cart. says if he leaves with electricity, he\'ll be back with more.'),
+			       _('a wanderer arrives with an empty batteries. says if he leaves with electricity, he\'ll be back with more.'),
 			       _("builder's not sure he's to be trusted.")
 				],
 				notification: _('a mysterious wanderer arrives'),
@@ -285,13 +285,13 @@ Events.Room = [
 			},
 			'100electricity': {
 				text: [
-			       _('the wanderer leaves, cart loaded with electricity')
+			       _('the wanderer leaves, batteries loaded with electricity')
 			    ],
 			    onLoad: function() {
 			    	if(Math.random() < 0.5) {
 			    		setTimeout(function() {
 			    			$SM.add('stores.electricity', 300);
-			    			Notifications.notify(Room, _('the mysterious wanderer returns, cart piled high with electricity.'));
+			    			Notifications.notify(Room, _('the mysterious wanderer returns, batteries piled high with electricity.'));
 			    		}, 60 * 1000);
 			    	}
 			    },
@@ -304,13 +304,13 @@ Events.Room = [
 			},
 			'500electricity': {
 				text: [
-				       _('the wanderer leaves, cart loaded with electricity')
+				       _('the wanderer leaves, batteries loaded with electricity')
 			    ],
 			    onLoad: function() {
 			    	if(Math.random() < 0.3) {
 			    		setTimeout(function() {
 			    			$SM.add('stores.electricity', 1500);
-			    			Notifications.notify(Room, _('the mysterious wanderer returns, cart piled high with electricity.'));
+			    			Notifications.notify(Room, _('the mysterious wanderer returns, batteries piled high with electricity.'));
 			    		}, 60 * 1000);
 			    	}
 			    },
@@ -332,7 +332,7 @@ Events.Room = [
 		scenes: {
 			start: {
 				text: [
-			       _('a wanderer arrives with an empty cart. says if she leaves with furs, she\'ll be back with more.'),
+			       _('a wanderer arrives with an empty batteries. says if she leaves with furs, she\'ll be back with more.'),
 			       _("builder's not sure she's to be trusted.")
 				],
 				notification: _('a mysterious wanderer arrives'),
@@ -355,13 +355,13 @@ Events.Room = [
 			},
 			'100fur': {
 				text: [
-			       _('the wanderer leaves, cart loaded with furs')
+			       _('the wanderer leaves, batteries loaded with furs')
 			    ],
 			    onLoad: function() {
 			    	if(Math.random() < 0.5) {
 			    		setTimeout(function() {
 			    			$SM.add('stores.fur', 300);
-			    			Notifications.notify(Room, _('the mysterious wanderer returns, cart piled high with furs.'));
+			    			Notifications.notify(Room, _('the mysterious wanderer returns, batteries piled high with furs.'));
 			    		}, 60 * 1000);
 			    	}
 			    },
@@ -374,13 +374,13 @@ Events.Room = [
 			},
 			'500fur': {
 				text: [
-				       _('the wanderer leaves, cart loaded with furs')
+				       _('the wanderer leaves, batteries loaded with furs')
 			    ],
 			    onLoad: function() {
 			    	if(Math.random() < 0.3) {
 			    		setTimeout(function() {
 			    			$SM.add('stores.fur', 1500);
-			    			Notifications.notify(Room, _('the mysterious wanderer returns, cart piled high with furs.'));
+			    			Notifications.notify(Room, _('the mysterious wanderer returns, batteries piled high with furs.'));
 			    		}, 60 * 1000);
 			    	}
 			    },
