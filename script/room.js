@@ -18,9 +18,9 @@ var Room = {
 			name: _('trap'),
 			button: null,
 			maximum: 10,
-			availableMsg: _('build-doge says she can set up "lost-and-found" stations to get things that people lose, for free!'),
-			buildMsg: _('more lost-and-founds to get more valuables!'),
-			maxMsg: _("more lost-and-founds won't help now"),
+			availableMsg: _('build-doge says she can set up trap stations to get things that people lose, for free!'),
+			buildMsg: _('more traps to get more valuables!'),
+			maxMsg: _("more traps won't help now"),
 			type: 'building',
 			cost: function() {
 				var n = $SM.get('game.buildings["trap"]', true);
